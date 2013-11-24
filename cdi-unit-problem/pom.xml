@@ -9,6 +9,7 @@
     <description>
         Example project showing how projects that include the servlet-api
         but use another version of weld that cdi-unit break.
+        See https://github.com/BrynCooke/cdi-unit/pull/44
    </description>
 
     <properties>
