@@ -1,4 +1,4 @@
-# Attempt to reprocude MSITE-640
+# Attempt to reproduce MSITE-640
 
 Up until now the [bug](https://jira.codehaus.org/browse/MSITE-640) can *not* be reproduced with this testcase and maven 3.1.1
 on linux x64, but can be reproduced with a confidential more complex project.
