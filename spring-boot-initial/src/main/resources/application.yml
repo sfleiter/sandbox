@@ -1,0 +1,39 @@
+spring:
+    application:
+        name: spring-boot-initial
+        admin:
+            enabled: true
+    dao:
+        exceptiontranslation:
+            enabled: true
+    datasource:
+        max-active: 50
+        max-wait: 500
+        test-on-borrow: true
+    endpoints:
+        jmx:
+            enabled: true
+    jersey:
+        # see 76.3 Actuator and Jersey
+        application-path: /jersey-rest
+    jmx:
+        enabled: true
+logging:
+    level:
+        hello:
+            web: DEBUG
+example:
+    names:
+        - foo
+        - bar
+
+---
+
+spring:
+    profiles: prod
+    # TODO disable devtools
+    datasource:
+        url: jdbc:postgresql://db:5432/test
+        username: postgres
+        password: postgres
+        driver-class-name: org.postgresql.Driver
